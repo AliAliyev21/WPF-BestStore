@@ -1,0 +1,224 @@
+﻿<Window x:Class="WPFStoreApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFStoreApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="550" Width="1000" Background="AntiqueWhite" MaxHeight="550" MaxWidth="1000" MinHeight="550" MinWidth="1000">
+    <Border CornerRadius="20" Margin="20" BorderBrush="Black" BorderThickness="2" Background="#E2E2E2">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="6*" />
+            </Grid.RowDefinitions>
+            
+
+            <Border Grid.Row="0" CornerRadius="5" Width="920" Height="45" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10" BorderBrush="Black" BorderThickness="2">
+                <WrapPanel >
+                    <Border CornerRadius="10" Background="Black" Height="35" Width="150" Margin="5,3,0,0">
+                        <Label                            
+                            Content="All Brands"                     
+                            Foreground="White"
+                            FontSize="16"
+                            FontWeight="Bold" 
+                            HorizontalContentAlignment="Center"
+                            >
+                        </Label>
+                    </Border>
+                    <Button
+                        Name="Cola"
+                        Margin="5,3,0,0"
+                        Height="30"
+                        Width="150"
+                        Content="CocaCola"
+                        Foreground="#ACA7A5"
+                        FontSize="15"
+                        FontWeight="Bold"
+                        Click="Cola_Click">
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border CornerRadius="5" Background="White">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button
+                        Name="Fanta"
+                        Margin="5,3,0,0"
+                        Height="30"
+                        Width="150"
+                        Content="Fanta"
+                        Foreground="#ACA7A5"
+                        FontSize="15"
+                        FontWeight="Bold"
+                        Click="Fanta_Click">
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border CornerRadius="5" Background="White">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button
+                        Name="Sprite"
+                        Margin="5,3,0,0"
+                        Height="30"
+                        Width="150"
+                        Content="Sprite"
+                        Foreground="#ACA7A5"
+                        FontSize="15"
+                        FontWeight="Bold"
+                        Click="Sprite_Click">
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border CornerRadius="5" Background="White">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Border BorderThickness="2" BorderBrush="Gray" Background="White" CornerRadius="5" Margin="15,2,0,0">
+                        <TextBox
+                            Name="SearchBox"
+                            Width="270"
+                            Height="30"
+                            FontSize="18"
+                            FontWeight="Bold"
+                            Foreground="#ACA7A5"
+                            Text="Search..."
+                            GotFocus="SearchBox_GotFocus"
+                            LostFocus="SearchBox_LostFocus"
+                            KeyUp="SearchBox_KeyUp"
+                            />
+                    </Border>
+                </WrapPanel>
+            </Border>
+
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="6*"/>
+                </Grid.ColumnDefinitions>
+
+                <Border Grid.Column="0" CornerRadius="10" Margin="10" BorderBrush="Black" BorderThickness="2">
+                    <WrapPanel>
+                        <Border CornerRadius="10" Background="Black" Margin="5" Width="100">
+                            <Label HorizontalContentAlignment="Left" Content="Products" Foreground="White" FontWeight="Bold" FontSize="16" />
+                        </Border>
+                        <Button 
+                                Name="All"
+                                Content="All"
+                                Foreground="Black"
+                                FontSize="20"
+                                FontWeight="Bold"
+                                Width="100"
+                                Height="35"
+                                Margin="5,5,0,0"
+                                HorizontalContentAlignment="Left"
+                                Background="Transparent"
+                                BorderThickness="0"
+                                Click="All_Click"
+                                >
+                        </Button>
+                        <Button
+                            Name="Cola1L"
+                            Content="CocaCola 1L"
+                            Width="100"
+                            Height="35"
+                            HorizontalContentAlignment="Left"
+                            Background="Transparent"
+                            BorderThickness="0"
+                            FontSize="17"
+                            FontWeight="Bold"
+                            Foreground="Gray"
+                            Margin="5,10,0,0"
+                            Click="Cola1L_Click">
+
+                        </Button>
+                        <Button
+                             Name="Cola05L"
+                             Content="CocaCola 0.5L"
+                             Width="100"
+                             Height="35"
+                             HorizontalContentAlignment="Left"
+                             Background="Transparent"
+                             BorderThickness="0"
+                             FontSize="15"
+                             FontWeight="Bold"
+                             Foreground="Gray"
+                             Margin="5,10,0,0"
+                             Click="Cola05L_Click">
+                        </Button>
+                        <Button
+                            Name="Fanta1L"
+                            Content="Fanta 1L"
+                            Width="100"
+                            Height="35"
+                            HorizontalContentAlignment="Left"
+                            Background="Transparent"
+                            BorderThickness="0"
+                            FontSize="17"
+                            FontWeight="Bold"
+                            Foreground="Gray"
+                            Margin="5,10,0,0"
+                            Click="Fanta1L_Click"
+                            >
+                        </Button>
+                        <Button
+                            Name="Fanta05L"
+                            Content="Fanta 0.5L"
+                            Width="100"
+                            Height="35"
+                            HorizontalContentAlignment="Left"
+                            Background="Transparent"
+                            BorderThickness="0"
+                            FontSize="17"
+                            FontWeight="Bold"
+                            Foreground="Gray"
+                            Margin="5,10,0,0"
+                            Click="Fanta05L_Click">
+                        </Button>
+                        <Button
+                            Name="Sprite1L"
+                            Content="Sprite 1L"
+                            Width="100"
+                            Height="35"
+                            HorizontalContentAlignment="Left"
+                            Background="Transparent"
+                            BorderThickness="0"
+                            FontSize="17"
+                            FontWeight="Bold"
+                            Foreground="Gray"
+                            Margin="5,10,0,0"
+                            Click="Sprite1L_Click">
+                        </Button>
+                        <Button
+                            Name="Sprite05L"
+                            Content="Sprite 0.5L"
+                            Width="100"
+                            Height="35"
+                            HorizontalContentAlignment="Left"
+                            Background="Transparent"
+                            BorderThickness="0"
+                            FontSize="17"
+                            FontWeight="Bold"
+                            Foreground="Gray"
+                            Margin="5,10,0,0"
+                            Click="Sprite05L_Click">
+                        </Button>
+                    </WrapPanel>
+                </Border>
+                <ListBox Name="ProductListBox" Grid.Column="1" Background="White" BorderBrush="Black" BorderThickness="2" Margin="10">
+                    
+                </ListBox>
+            </Grid>
+
+           
+
+
+        </Grid>
+    </Border>
+</Window>
