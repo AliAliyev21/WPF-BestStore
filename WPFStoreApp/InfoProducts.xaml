@@ -1,0 +1,43 @@
+﻿<Window x:Class="WPFStoreApp.InfoProducts"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFStoreApp"
+        mc:Ignorable="d"
+        Title="InfoProducts" Height="250" Width="250" Background="#E2E2E2">
+    <Grid>
+        <Border Width="120" Height="140" VerticalAlignment="Center" BorderThickness="0" Background="White" CornerRadius="20">
+            <Grid>
+                <StackPanel>
+                    <Image Source="{Binding InfoProducts.Image, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" Width="80" Height="70" Margin="0,10,0,0"></Image>
+                    <TextBlock Text="{Binding InfoProducts.Name, Mode=TwoWay , UpdateSourceTrigger=PropertyChanged}"   Margin="10,0,0,0" HorizontalAlignment="Left" Width="90" Height="20" FontSize="13" FontWeight="ExtraBold" Foreground="Black"></TextBlock>
+                    <TextBlock Text="{Binding InfoProducts.Price, Mode=TwoWay , UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Width="60" Height="20" FontSize="13" Margin="10,0,0,0" FontWeight="DemiBold" Foreground="Black"/>
+                </StackPanel>
+                <Canvas>
+                    <Border Background="#E2E2E2" Width="50" Height="50" Margin="75,100,0,0" CornerRadius="25"  >
+                        <Grid>
+                            <Button 
+                            Name="EditButton1"
+                            Width="40"
+                            Height="40"
+                            Foreground="Black"
+                            Content="√" 
+                            FontSize="20"
+                            FontWeight="ExtraBold"                                 
+                            >
+                                <Button.Template>
+                                    <ControlTemplate TargetType="Button">
+                                        <Border CornerRadius="25" Background="White">
+                                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Button.Template>
+                            </Button>
+                        </Grid>
+                    </Border>
+                </Canvas>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>

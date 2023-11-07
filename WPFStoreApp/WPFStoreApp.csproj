@@ -8,11 +8,33 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Images\cola0.3L.jpg" />
+    <None Remove="Images\cola0.5l.jpg" />
     <None Remove="Images\cola1L.jpg" />
+    <None Remove="Images\cola1LZero.jpg" />
+    <None Remove="Images\fanta0.3L.jpg" />
+    <None Remove="Images\fanta0.5L.jpg" />
+    <None Remove="Images\fanta1L.jpg" />
+    <None Remove="Images\imageStore.png" />
+    <None Remove="Images\sky.jpg" />
+    <None Remove="Images\sprite0.3L.jpg" />
+    <None Remove="Images\sprite0.5L.jpg" />
+    <None Remove="Images\sprite1L.jpg" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Images\cola0.3L.jpg" />
+    <Resource Include="Images\cola0.5l.jpg" />
     <Resource Include="Images\cola1L.jpg" />
+    <Resource Include="Images\cola1LZero.jpg" />
+    <Resource Include="Images\fanta0.3L.jpg" />
+    <Resource Include="Images\fanta0.5L.jpg" />
+    <Resource Include="Images\fanta1L.jpg" />
+    <Resource Include="Images\imageStore.png" />
+    <Resource Include="Images\sky.jpg" />
+    <Resource Include="Images\sprite0.3L.jpg" />
+    <Resource Include="Images\sprite0.5L.jpg" />
+    <Resource Include="Images\sprite1L.jpg" />
   </ItemGroup>
 
 </Project>

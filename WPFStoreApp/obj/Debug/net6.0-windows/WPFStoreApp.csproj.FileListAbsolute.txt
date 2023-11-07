@@ -18,3 +18,5 @@ C:\Users\user\source\repos\WPFStoreApp\WPFStoreApp\obj\Debug\net6.0-windows\refi
 C:\Users\user\source\repos\WPFStoreApp\WPFStoreApp\obj\Debug\net6.0-windows\WPFStoreApp.pdb
 C:\Users\user\source\repos\WPFStoreApp\WPFStoreApp\obj\Debug\net6.0-windows\WPFStoreApp.genruntimeconfig.cache
 C:\Users\user\source\repos\WPFStoreApp\WPFStoreApp\obj\Debug\net6.0-windows\ref\WPFStoreApp.dll
+C:\Users\user\source\repos\WPFStoreApp\WPFStoreApp\obj\Debug\net6.0-windows\InfoProducts.g.cs
+C:\Users\user\source\repos\WPFStoreApp\WPFStoreApp\obj\Debug\net6.0-windows\InfoProducts.baml

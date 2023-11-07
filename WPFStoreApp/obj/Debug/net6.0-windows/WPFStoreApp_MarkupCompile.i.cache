@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\user\source\repos\WPFStoreApp\WPFStoreApp\App.xaml
-11407045341
+21872040924
 
-6-305057783
+101404796984
 194-2067936865
-MainWindow.xaml;
+InfoProducts.xaml;MainWindow.xaml;
 
-False
+True
 
